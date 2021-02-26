@@ -1,6 +1,7 @@
 <script>
 	import Nav from '../components/Nav.svelte';
 
+	export let searchBoxTextValue = "";
 </script>
 
 <style>
@@ -14,7 +15,10 @@
 	}
 </style>
 
-
+<header>
+	<section>nYote</section>
+	<section class="search"><input value="{searchBoxTextValue}" type="text" placeholder="Search..." /></section>
+</header>
 
 <main>
 	<slot></slot>
